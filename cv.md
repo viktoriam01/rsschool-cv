@@ -6,9 +6,11 @@ Junior Frontend Developer
 
 ## Contact Information
 
-Phone: +8 951623xxxx</br>
-E-mail: viktoriamotoshkina@gmail.com</br>
-Telegram: @viktoria</br>
+Phone: +8 951623xxxx
+
+E-mail: viktoriamotoshkina@gmail.com
+
+Telegram: @viktoria
 
 ---
 
