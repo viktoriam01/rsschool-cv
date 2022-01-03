@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <title>CV</title>
+</head>
+
+<body>
+   <div class="container">
+
+      <header>
+         <img src="./img/avatar1.png" alt="My photo" class="profile-photo" />
+         <div class="name">
+            <h1>Viktoria Motoshkina</h1>
+            <h2>Junior Front-End Developer</h2>
+         </div>
+      </header>
+
+      <main>
+         <aside>
+            <section id="contacts">
+               <div class="section-header">
+                  <h3 class="aside-color">Contacts</h3>
+               </div>
+               <ul class="aside-list contacts-list">
+                  <li class="aside-color">Aisling (@viktoriam01)</li>
+                  <li class="aside-color">+7951623xxxx</li>
+                  <li class="aside-color">viktoriam@gmail.com</li>
+                  <li class="aside-color">Russia, Saint Petersburg</li>
+               </ul>
+            </section>
+
+            <section id="skills">
+               <div class="section-header">
+                  <h3 class="aside-color">Skills</h3>
+               </div >
+                  <ul class="skills__list">
+                  <li class="skills__item skills__html">HTML</li>
+                  <li class="skills__item skills__css">CSS</li>
+                  <li class="skills__item skills__javascript">JavaScript Basics</li>
+               </ul>
+            </section>
+
+             <section id="language">
+               <div class="section-header">
+                  <h3 class="aside-color">English</h3>
+               </div>
+               <div class='lang-lvl'>
+                  <div class="aside-color">B2</div>
+               </div>
+            </section>
+         </aside>
+
+         <div class="main">
+            <section id="about">
+               <div class="section-header">
+                  <h3>About Myself</h3>
+               </div>
+               <div class=about-me>
+                  <p>Hi, my name is Viktoria and I am a recent graduate of Innopolis University.</p>
+                  <p>I would like to become a frontend developer, and here are my first steps in HTML, CSS and JS. My main goal now is to improve my skills, because in a future i'd like to work in strong team with the extraordinary and interesting prodjects. </p>                
+               </div>
+            </section>
+            <section id="education">
+               <div class="section-header">
+                  <h3>Education</h3>
+               </div>
+               <ul class="section-list">
+                  <li>
+                     <a target="_blank" class="section-link"
+                        href="https://innopolis.university/">
+                        Univercity of Innopolis Junior Frontend Developer</a>
+                  </li>
+                  <li>
+                     <a target="_blank" class="section-link"
+                        href="https://htmlacademy.ru/">
+                        HTML Academy Frontend developer (in process)</a>
+                  </li>
+                  <li>
+                     <a target="_blank" class="section-link" href="https://www.udemy.com/">
+                        Udemy React+Redux (in process)
+                     </a>
+                  </li>
+               </ul>
+            </section>
+            <section id="projects">
+               <div class="section-header">
+                  <h3>Projects</h3>
+               </div>
+               
+               <div class="projects__wrapper">
+                  <div class="projects__item">
+                     <a href="https://jsfiddle.net/Aislingdar/o0Lec5bu/5/" class="projects__link"
+                        target="_blank" data-tooltip="Animated Gallery">
+                        <img src="./img/sliderA.jpg" alt="Gallery" class="projects__image">
+                     </a>
+                  </div>
+                  <div class="projects__item">
+                     <a href="https://jsfiddle.net/Aislingdar/bkmvfxou/" class="projects__link"
+                        target="_blank" data-tooltip="Asynchr Vertical Slider">
+                        <img src="./img/sliderB.jpg" alt="Slider" class="projects__image">
+                     </a>
+                  </div>
+               </div>
+
+            </section>
+            <section id="code-example">
+               <div class="section-header">
+                  <h3>Code Example</h3>
+               </div>
+               <div>
+                  <pre style="background-color: #14213d; color: #e5e5e5"><code class="hljs" id="code">
+      const twoNum = prompt('Введите второе число');
+
+         if (!twoNum || isNaN(twoNum)) {
+               console.log(`Некорректный ввод второго числа`);
+            } else {
+               switch (sign) {
+                  case '+': console.log(+oneNum + +twoNum); break;
+                  case '-': console.log(+oneNum - +twoNum); break;
+                  case '/': console.log(+oneNum / +twoNum); break;
+                  case '*': console.log(+oneNum * +twoNum); break;
+                  case `default`: console.log(`Программа не поддерживает такую операцию`); 
+                  break;
+                  };
+                  </code></pre>
+               </div>
+            </section>
+         </div>
+        
+      </main>
+
+      <footer>
+         <div class="footer-github">
+            <a target="_blank" href="https://github.com/viktoriam01"><i class="github"></i>GitHub</a>
+         </div>
+         <div class="footer-rsschool">
+            <a target="_blank" href="https://rs.school/js/"><img src="./img/rs_school_js.svg" alt="RSSchool link" /></a>
+         </div>
+         <div class="footer-year">2021</div>
+      </footer>
+
+   </div>
+   <script src="app.js"></script>
+</body>
+
+</html>
