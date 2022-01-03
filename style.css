@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: #14213d;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  border-right: 1px solid #fca311;
+}
+
+header {
+  display: flex;
+  background: #fca311;
+  transition: 0.7s;
+}
+
+.profile-photo {
+  width: 300px;
+}
+
+.name {
+  flex-grow: 1;
+  align-self: center;
+  text-align: center;
+}
+
+.name h1,
+h2 {
+  font-family: "Questrial", sans-serif;
+  color: #ffffff;
+}
+
+.name > h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.name > h2 {
+  font-size: 28px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.main {
+  width: 70%;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+aside {
+  width: 30%;
+  padding: 20px;
+  background: #14213d;
+  color: #ffffff;
+}
+
+.aside-color {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.about-me {
+  position: relative;
+  margin: 15px 0;
+  transition: 0.5s;
+}
+
+.about-me:hover {
+  margin-left: 3px;
+  transform: scale(1.05);
+}
+
+.about-me > p {
+  margin: 10px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 10px 0 20px;
+  padding: 10px 0;
+  color: #fca311;
+  border-bottom: 1px solid #fca311;
+}
+
+.section-header > h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.section-list > li {
+  margin: 20px 0;
+  list-style: none;
+}
+.skills__html {
+  background-image: url(img/html.svg);
+}
+
+.skills__css {
+  background-image: url(img/css.svg);
+}
+
+.skills__javascript {
+  background-image: url(img/javascript.svg);
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: left center;
+}
+
+.section-link {
+  text-decoration: none;
+  transition: 0.15s linear;
+}
+
+.section-link:hover {
+  opacity: 0.7;
+  margin-left: 8px;
+  color: #fca311;
+}
+
+.aside-list > li {
+  margin: 15px 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.projects__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  box-shadow: 5px 5px 10px 0px #939394;
+  border-radius: 8px;
+}
+
+.projects__link {
+  transition: 0.5s all ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.projects__image {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  transition: 0.7s;
+}
+
+.projects__image:hover {
+  transform: scale(1.2);
+  border-radius: 8px;
+}
+
+[data-tooltip] {
+  position: relative; /* Относительное позиционирование */
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 300px; /* Ширина подсказки */
+  left: 0;
+  top: 0; /* Положение подсказки */
+  background: #14213d; /* Синий цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 0.5em; /* Поля вокруг текста */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  pointer-events: none; /* Подсказка */
+  opacity: 0; /* Подсказка невидима */
+  transition: 0.7s; /* Время появления подсказки */
+}
+[data-tooltip]:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: 7.7em; /* Положение подсказки */
+}
+
+#code-example {
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fca311;
+  color: #ffffff;
+}
+
+.footer-year {
+  width: 100px;
+  text-align: center;
+  font-size: 37px;
+  line-height: 37px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.footer-github > a {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-github > a > i {
+  margin-right: 10px;
+}
+
+.footer-rsschool > a > img {
+  width: 100px;
+  position: relative;
+  top: 3px;
+}
